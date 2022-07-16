@@ -450,7 +450,6 @@ trait AssetsTrait
         return ArrayUtils::whitelist(
             $options,
             [
-                'exif',
                 'colors',
                 'faces',
                 'quality_analysis',

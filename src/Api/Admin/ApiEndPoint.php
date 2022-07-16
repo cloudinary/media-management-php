@@ -18,12 +18,8 @@ class ApiEndPoint
     const PING               = 'ping';
     const USAGE              = 'usage';
     const ASSETS             = 'resources';
-    const DERIVED_ASSETS     = 'derived_resources';
     const FOLDERS            = 'folders';
     const TAGS               = 'tags';
-    const STREAMING_PROFILES = 'streaming_profiles';
-    const TRANSFORMATIONS    = 'transformations';
-    const UPLOAD_PRESETS     = 'upload_presets';
     const UPLOAD_MAPPINGS    = 'upload_mappings';
     const METADATA_FIELDS    = 'metadata_fields';
 }

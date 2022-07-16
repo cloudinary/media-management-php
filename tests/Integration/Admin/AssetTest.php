@@ -22,7 +22,7 @@ use Cloudinary\Test\Integration\IntegrationTestCase;
  */
 final class AssetTest extends IntegrationTestCase
 {
-    const EXTRA_INFO = ['colors' => true, 'exif' => true, 'faces' => true];
+    const EXTRA_INFO = ['colors' => true, 'faces' => true];
 
     const ASSET_IMAGE = 'asset_image';
     const ASSET_DOCX  = 'asset_docx';
@@ -77,7 +77,6 @@ final class AssetTest extends IntegrationTestCase
         self::assertValidAsset($result);
         self::assertArrayNotHasKey('accessibility_analysis', $result);
         self::assertArrayNotHasKey('colors', $result);
-        self::assertArrayNotHasKey('exif', $result);
         self::assertArrayNotHasKey('faces', $result);
     }
 
@@ -95,7 +94,6 @@ final class AssetTest extends IntegrationTestCase
             $result,
             [
                 'colors' => [],
-                'exif'   => [],
                 'faces'  => [],
             ]
         );
@@ -111,7 +109,6 @@ final class AssetTest extends IntegrationTestCase
         self::assertValidAsset($result);
         self::assertArrayNotHasKey('accessibility_analysis', $result);
         self::assertArrayNotHasKey('colors', $result);
-        self::assertArrayNotHasKey('exif', $result);
         self::assertArrayNotHasKey('faces', $result);
     }
 
@@ -126,7 +123,6 @@ final class AssetTest extends IntegrationTestCase
             $result,
             [
                 'colors' => [],
-                'exif'   => [],
                 'faces'  => [],
             ]
         );

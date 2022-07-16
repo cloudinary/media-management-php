@@ -136,33 +136,6 @@ final class ListAssetsTest extends IntegrationTestCase
     }
 
     /**
-     * Get a list of all images with delivery type facebook.
-     */
-    public function testListFacebookImages()
-    {
-        $result = self::$adminApi->assets([DeliveryType::KEY => DeliveryType::FACEBOOK]);
-
-        self::assertValidAsset(
-            $result['resources'][0],
-            [
-                DeliveryType::KEY => DeliveryType::FACEBOOK,
-                AssetType::KEY    => AssetType::IMAGE,
-            ]
-        );
-    }
-
-    /**
-     * Facebook images assets do not contain height or width.
-     */
-    public function testFacebookImagesWidthHeight()
-    {
-        $result = self::$adminApi->assets([DeliveryType::KEY => DeliveryType::FACEBOOK]);
-
-        self::assertArrayNotHasKey('height', $result['resources'][0]);
-        self::assertArrayNotHasKey('width', $result['resources'][0]);
-    }
-
-    /**
      * List raw uploaded files.
      */
     public function testListRawUploadedFiles()
