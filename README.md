@@ -9,7 +9,6 @@ Effortlessly upload and manage your cloud's assets.
 
 #### Note
 This Readme provides basic installation and usage information.
-For the complete documentation, see the [PHP SDK Guide](https://cloudinary.com/documentation/php_integration).
 
 ## Table of Contents
 - [Key Features](#key-features)
