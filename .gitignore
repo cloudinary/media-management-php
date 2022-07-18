@@ -1,0 +1,10 @@
+vendor/
+composer.lock
+tests/coverage
+output/
+.idea
+composer.phar
+docs/sami.phar
+docs/cache/
+docs/build/
+/.phpunit.result.cache
