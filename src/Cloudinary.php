@@ -27,7 +27,7 @@ class Cloudinary
      *
      * @var string VERSION
      */
-    const VERSION = '0.1.0-beta';
+    const VERSION = '0.1.1-beta';
 
     /**
      * Defines the Cloudinary cloud details and other global configuration options.

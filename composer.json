@@ -1,6 +1,6 @@
 {
   "name": "cloudinary/media-management",
-  "version": "0.1.0-beta",
+  "version": "0.1.1-beta",
   "description": "Cloudinary Media Management PHP SDK",
   "keywords": [
     "cloudinary",
