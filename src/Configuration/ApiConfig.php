@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Configuration;
+namespace Cloudinary\MediaManagement\Configuration;
 
 /**
  * Defines the global configuration when making requests to the Cloudinary API.

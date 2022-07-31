@@ -49,7 +49,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Cloudinary\\Test\\": "tests"
+      "Cloudinary\\MediaManagement\\Test\\": "tests"
     }
   }
 }

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Metadata;
+namespace Cloudinary\MediaManagement\Api\Metadata;
 
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Utils;
 use DateTime;
 use Exception;
 

@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Upload;
+namespace Cloudinary\MediaManagement\Api\Upload;
 
-use Cloudinary\Api\ApiUtils;
-use Cloudinary\Api\UploadApiClient;
+use Cloudinary\MediaManagement\Api\ApiUtils;
+use Cloudinary\MediaManagement\Api\UploadApiClient;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Configuration\CloudConfig;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Configuration\CloudConfig;
+use Cloudinary\MediaManagement\Utils;
 use GuzzleHttp\Promise\PromiseInterface;
 
 /**

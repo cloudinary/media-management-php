@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Admin;
+namespace Cloudinary\MediaManagement\Test\Unit\Admin;
 
-use Cloudinary\Test\Helpers\MockAdminApi;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Test\Helpers\MockAdminApi;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 
 /**
  * Class AdminApiTest

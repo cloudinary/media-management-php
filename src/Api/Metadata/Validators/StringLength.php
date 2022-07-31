@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Metadata\Validators;
+namespace Cloudinary\MediaManagement\Api\Metadata\Validators;
 
 /**
  * A validator to validate string lengths.

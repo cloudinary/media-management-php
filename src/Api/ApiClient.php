@@ -8,16 +8,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api;
+namespace Cloudinary\MediaManagement\Api;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\GeneralError;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\GeneralError;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Configuration\ApiConfig;
-use Cloudinary\Configuration\CloudConfig;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\FileUtils;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Configuration\ApiConfig;
+use Cloudinary\MediaManagement\Configuration\CloudConfig;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\FileUtils;
+use Cloudinary\MediaManagement\Utils;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Promise;

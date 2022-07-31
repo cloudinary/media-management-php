@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\TestHelpers;
+namespace Cloudinary\MediaManagement\Test\Unit\TestHelpers;
 
 /**
  * Class TestClassA

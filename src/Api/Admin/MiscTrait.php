@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Admin;
+namespace Cloudinary\MediaManagement\Api\Admin;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Utils;
 use GuzzleHttp\Promise\PromiseInterface;
 
 /**

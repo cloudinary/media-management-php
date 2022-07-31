@@ -8,23 +8,23 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api;
+namespace Cloudinary\MediaManagement\Api;
 
-use Cloudinary\Api\Exception\AlreadyExists;
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\AuthorizationRequired;
-use Cloudinary\Api\Exception\BadRequest;
-use Cloudinary\Api\Exception\GeneralError;
-use Cloudinary\Api\Exception\NotAllowed;
-use Cloudinary\Api\Exception\NotFound;
-use Cloudinary\Api\Exception\RateLimited;
+use Cloudinary\MediaManagement\Api\Exception\AlreadyExists;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\AuthorizationRequired;
+use Cloudinary\MediaManagement\Api\Exception\BadRequest;
+use Cloudinary\MediaManagement\Api\Exception\GeneralError;
+use Cloudinary\MediaManagement\Api\Exception\NotAllowed;
+use Cloudinary\MediaManagement\Api\Exception\NotFound;
+use Cloudinary\MediaManagement\Api\Exception\RateLimited;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Cloudinary;
-use Cloudinary\Configuration\ApiConfig;
+use Cloudinary\MediaManagement\Cloudinary;
+use Cloudinary\MediaManagement\Configuration\ApiConfig;
 use Cloudinary\JsonUtils;
-use Cloudinary\Log\LoggerTrait;
+use Cloudinary\MediaManagement\Log\LoggerTrait;
 use Cloudinary\StringUtils;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Utils;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;

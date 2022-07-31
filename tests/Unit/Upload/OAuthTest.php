@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Upload;
+namespace Cloudinary\MediaManagement\Test\Unit\Upload;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Test\Helpers\MockUploadApi;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Test\Helpers\MockUploadApi;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 use InvalidArgumentException;
 
 /**

@@ -8,16 +8,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Admin;
+namespace Cloudinary\MediaManagement\Test\Unit\Admin;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Metadata\EnumMetadataField;
-use Cloudinary\Api\Metadata\IntMetadataField;
-use Cloudinary\Api\Metadata\MetadataFieldType;
-use Cloudinary\Api\Metadata\StringMetadataField;
-use Cloudinary\Test\Helpers\MockAdminApi;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Metadata\EnumMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\IntMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\MetadataFieldType;
+use Cloudinary\MediaManagement\Api\Metadata\StringMetadataField;
+use Cloudinary\MediaManagement\Test\Helpers\MockAdminApi;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 
 /**
  * Class MetadataFieldsTest

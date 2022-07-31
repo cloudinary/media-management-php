@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Log;
+namespace Cloudinary\MediaManagement\Log;
 
-use Cloudinary\Configuration\LoggingConfig;
+use Cloudinary\MediaManagement\Configuration\LoggingConfig;
 use Monolog\Handler\HandlerInterface;
 use Monolog\Handler\TestHandler;
 use Psr\Log\LoggerInterface;

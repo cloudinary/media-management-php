@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit;
+namespace Cloudinary\MediaManagement\Test\Unit;
 
-use Cloudinary\Exception\Error;
-use Cloudinary\HttpClient;
+use Cloudinary\MediaManagement\Exception\Error;
+use Cloudinary\MediaManagement\HttpClient;
 use Monolog\Logger as Monolog;
 use ReflectionException;
 

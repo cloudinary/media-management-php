@@ -8,23 +8,23 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Admin;
+namespace Cloudinary\MediaManagement\Test\Integration\Admin;
 
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\BadRequest;
-use Cloudinary\Api\Metadata\DateMetadataField;
-use Cloudinary\Api\Metadata\EnumMetadataField;
-use Cloudinary\Api\Metadata\IntMetadataField;
-use Cloudinary\Api\Metadata\MetadataFieldType;
-use Cloudinary\Api\Metadata\SetMetadataField;
-use Cloudinary\Api\Metadata\StringMetadataField;
-use Cloudinary\Api\Metadata\Validators\AndValidator;
-use Cloudinary\Api\Metadata\Validators\DateGreaterThan;
-use Cloudinary\Api\Metadata\Validators\DateLessThan;
-use Cloudinary\Api\Metadata\Validators\IntLessThan;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\BadRequest;
+use Cloudinary\MediaManagement\Api\Metadata\DateMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\EnumMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\IntMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\MetadataFieldType;
+use Cloudinary\MediaManagement\Api\Metadata\SetMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\StringMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\Validators\AndValidator;
+use Cloudinary\MediaManagement\Api\Metadata\Validators\DateGreaterThan;
+use Cloudinary\MediaManagement\Api\Metadata\Validators\DateLessThan;
+use Cloudinary\MediaManagement\Api\Metadata\Validators\IntLessThan;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 use DateInterval;
 use DateTime;
 use Exception;

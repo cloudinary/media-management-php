@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Admin\Assets;
+namespace Cloudinary\MediaManagement\Test\Integration\Admin\Assets;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\NotFound;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Asset\DeliveryType;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\NotFound;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Asset\DeliveryType;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 
 /**
  * Class DeleteAssetsTest

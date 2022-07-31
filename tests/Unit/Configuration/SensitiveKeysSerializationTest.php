@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Configuration;
+namespace Cloudinary\MediaManagement\Test\Unit\Configuration;
 
-use Cloudinary\Configuration\CloudConfig;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Configuration\CloudConfig;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 
 /**
  * Class SensitiveKeysSerializationTest

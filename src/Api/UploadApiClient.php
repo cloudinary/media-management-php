@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api;
+namespace Cloudinary\MediaManagement\Api;
 
 use Cloudinary\ArrayUtils;
-use Cloudinary\Configuration\CloudConfig;
+use Cloudinary\MediaManagement\Configuration\CloudConfig;
 use InvalidArgumentException;
 
 /**

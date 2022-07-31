@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit;
+namespace Cloudinary\MediaManagement\Test\Unit;
 
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Configuration\ConfigUtils;
-use Cloudinary\Test\CloudinaryTestCase;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Configuration\ConfigUtils;
+use Cloudinary\MediaManagement\Test\CloudinaryTestCase;
 
 /**
  * Class UnitTestCase

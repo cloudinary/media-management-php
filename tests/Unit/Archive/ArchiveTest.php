@@ -8,13 +8,13 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Archive;
+namespace Cloudinary\MediaManagement\Test\Unit\Archive;
 
-use Cloudinary\Api\Upload\UploadApi;
-use Cloudinary\Api\Upload\UploadEndPoint;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Asset\DeliveryType;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Upload\UploadApi;
+use Cloudinary\MediaManagement\Api\Upload\UploadEndPoint;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Asset\DeliveryType;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 
 /**
  * Class ArchiveTest

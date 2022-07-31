@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Utils;
+namespace Cloudinary\MediaManagement\Test\Unit\Utils;
 
-use Cloudinary\FileUtils;
-use Cloudinary\Tag\ImageTag;
+use Cloudinary\MediaManagement\FileUtils;
+use Cloudinary\MediaManagement\Tag\ImageTag;
 use PHPUnit\Framework\TestCase;
 
 /**

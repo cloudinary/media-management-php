@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Search;
+namespace Cloudinary\MediaManagement\Api\Search;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\Exception\GeneralError;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\Exception\GeneralError;
 use Cloudinary\ArrayUtils;
 use GuzzleHttp\Promise\PromiseInterface;
 use JsonSerializable;

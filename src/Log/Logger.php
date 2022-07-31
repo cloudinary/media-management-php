@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Log;
+namespace Cloudinary\MediaManagement\Log;
 
 use Cloudinary\ArrayUtils;
-use Cloudinary\Configuration\LoggingConfig;
+use Cloudinary\MediaManagement\Configuration\LoggingConfig;
 use Exception;
 use Monolog\Handler\ErrorLogHandler;
 use Monolog\Handler\HandlerInterface;

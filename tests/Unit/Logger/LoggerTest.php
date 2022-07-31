@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Logger;
+namespace Cloudinary\MediaManagement\Test\Unit\Logger;
 
-use Cloudinary\Test\Unit\TestHelpers\TestLogger;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Test\Unit\TestHelpers\TestLogger;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 use Exception;
 use Monolog\Handler\ErrorLogHandler;
 use Monolog\Handler\NullHandler;

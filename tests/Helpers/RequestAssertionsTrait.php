@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Helpers;
+namespace Cloudinary\MediaManagement\Test\Helpers;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Configuration\Configuration;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Configuration\Configuration;
 use Psr\Http\Message\RequestInterface;
 
 use GuzzleHttp\Psr7;

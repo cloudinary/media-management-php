@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Admin;
+namespace Cloudinary\MediaManagement\Test\Integration\Admin;
 
-use Cloudinary\Api\Admin\AdminApi;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Configuration\ConfigUtils;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Admin\AdminApi;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Configuration\ConfigUtils;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 
 /**
  * Class OAuthTest

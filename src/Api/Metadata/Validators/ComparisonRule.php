@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Metadata\Validators;
+namespace Cloudinary\MediaManagement\Api\Metadata\Validators;
 
 /**
  * Base class for all comparison (greater than/less than) validation rules.

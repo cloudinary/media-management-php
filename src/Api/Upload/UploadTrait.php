@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Upload;
+namespace Cloudinary\MediaManagement\Api\Upload;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\ApiUtils;
-use Cloudinary\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\ApiUtils;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\ModerationType;
+use Cloudinary\MediaManagement\Asset\ModerationType;
 use GuzzleHttp\Promise\PromiseInterface;
 
 /**
@@ -54,6 +54,7 @@ trait UploadTrait
             'discard_original_filename',
             'display_name',
             'eager_notification_url',
+            'eager_async',
             'eval',
             'faces',
             'filename_override',

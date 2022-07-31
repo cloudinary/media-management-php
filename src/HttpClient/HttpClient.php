@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary;
+namespace Cloudinary\MediaManagement;
 
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Exception\Error;
-use Cloudinary\Log\LoggerTrait;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Exception\Error;
+use Cloudinary\MediaManagement\Log\LoggerTrait;
 use GuzzleHttp\Client;
 use InvalidArgumentException;
 use Psr\Http\Message\ResponseInterface;

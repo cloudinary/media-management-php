@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit;
+namespace Cloudinary\MediaManagement\Test\Unit;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
 use Exception;
 use GuzzleHttp\Psr7\Response;
 use Monolog\Logger as Monolog;

@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\TestHelpers;
+namespace Cloudinary\MediaManagement\Test\Unit\TestHelpers;
 
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Log\LoggerDecorator;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Log\LoggerDecorator;
 
 /**
  * Logger implementation for test purposes

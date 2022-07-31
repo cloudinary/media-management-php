@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api;
+namespace Cloudinary\MediaManagement\Api;
 
 /**
  * Class HttpMethod

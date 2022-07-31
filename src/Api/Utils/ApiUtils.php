@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api;
+namespace Cloudinary\MediaManagement\Api;
 
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\AssetTransformation;
+use Cloudinary\MediaManagement\Asset\AssetTransformation;
 use Cloudinary\ClassUtils;
-use Cloudinary\Configuration\CloudConfig;
+use Cloudinary\MediaManagement\Configuration\CloudConfig;
 use Cloudinary\Transformation\Transformation;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Utils;
 
 /**
  * Class ApiUtils
@@ -78,7 +78,7 @@ class ApiUtils
     public static function serializeContext($context): ?string
     {
         if (is_array($context)) {
-            $context = array_map('\Cloudinary\Api\ApiUtils::serializeJson', $context);
+            $context = array_map('\Cloudinary\MediaManagement\Api\ApiUtils::serializeJson', $context);
         }
 
         return self::serializeParameter($context, self::CONTEXT_OUTER_DELIMITER, self::CONTEXT_INNER_DELIMITER);

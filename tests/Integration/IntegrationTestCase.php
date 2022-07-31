@@ -8,20 +8,20 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration;
+namespace Cloudinary\MediaManagement\Test\Integration;
 
-use Cloudinary\Api\Admin\AdminApi;
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Upload\UploadApi;
+use Cloudinary\MediaManagement\Api\Admin\AdminApi;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Upload\UploadApi;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Asset\DeliveryType;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Configuration\ConfigUtils;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Asset\DeliveryType;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Configuration\ConfigUtils;
 use Cloudinary\StringUtils;
-use Cloudinary\Test\CloudinaryTestCase;
-use Cloudinary\Test\Helpers\Addon;
+use Cloudinary\MediaManagement\Test\CloudinaryTestCase;
+use Cloudinary\MediaManagement\Test\Helpers\Addon;
 use Exception;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7;

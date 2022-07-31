@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Search;
+namespace Cloudinary\MediaManagement\Test\Integration\Search;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\BadRequest;
-use Cloudinary\Api\Search\SearchApi;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\BadRequest;
+use Cloudinary\MediaManagement\Api\Search\SearchApi;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 use Cloudinary\StringUtils;
 use Cloudinary\Transformation\Scale;
 use Cloudinary\Transformation\Transformation;
@@ -55,6 +55,7 @@ class SearchApiTest extends IntegrationTestCase
             'options' => [
                 'context' => ['stage' => 'value'],
                 'eager' => (new Transformation())->resize(Scale::scale(100)),
+                'eager_async' => true
             ],
         ];
 

@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Metadata\Validators;
+namespace Cloudinary\MediaManagement\Api\Metadata\Validators;
 
-use Cloudinary\Api\Metadata\Metadata;
+use Cloudinary\MediaManagement\Api\Metadata\Metadata;
 
 /**
  * Represents the base class for metadata fields validation mechanisms.

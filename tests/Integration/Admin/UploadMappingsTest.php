@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Admin;
+namespace Cloudinary\MediaManagement\Test\Integration\Admin;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\NotFound;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\NotFound;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 
 /**
  * Class UploadMappingsTest

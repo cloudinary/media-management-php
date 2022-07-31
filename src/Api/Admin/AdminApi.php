@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Admin;
+namespace Cloudinary\MediaManagement\Api\Admin;
 
-use Cloudinary\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiClient;
 
 /**
  * Enables Cloudinary Admin API functionality.

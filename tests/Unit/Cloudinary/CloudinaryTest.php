@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Cloudinary;
+namespace Cloudinary\MediaManagement\Test\Unit\Cloudinary;
 
-use Cloudinary\Cloudinary;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Cloudinary;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 use InvalidArgumentException;
 
 /**

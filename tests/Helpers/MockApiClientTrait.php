@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Helpers;
+namespace Cloudinary\MediaManagement\Test\Helpers;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Handler\MockHandler;
