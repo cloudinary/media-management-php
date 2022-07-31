@@ -10,6 +10,7 @@
 
 namespace Cloudinary\MediaManagement;
 
+use Cloudinary\JsonUtils;
 use Cloudinary\MediaManagement\Configuration\Configuration;
 use Cloudinary\MediaManagement\Exception\Error;
 use Cloudinary\MediaManagement\Log\LoggerTrait;

@@ -30,9 +30,7 @@ final class DeleteAssetsTest extends IntegrationTestCase
     const MULTI_DELETE_OPTION_2 = 'multi_delete_option_2';
     const MULTI_DELETE_1        = 'multi_delete_1';
     const MULTI_DELETE_2        = 'multi_delete_2';
-    const DELETE_DERIVED        = 'delete_derived';
     const DELETE_SINGLE         = 'delete_single';
-    const PRIVATE_ASSET         = 'private_asset';
 
     private static $DELETE_PREFIX;
     private static $FULL_DELETE_PREFIX;
@@ -54,12 +52,6 @@ final class DeleteAssetsTest extends IntegrationTestCase
         self::createTestAssets(
             [
                 self::MULTI_DELETE_OPTION_1,
-                self::MULTI_DELETE_OPTION_2 => [
-                    'options' => [
-                        DeliveryType::KEY => DeliveryType::PRIVATE_DELIVERY,
-                    ],
-                ],
-                self::DELETE_DERIVED,
                 self::MULTI_DELETE_1,
                 self::MULTI_DELETE_2,
                 self::DELETE_SINGLE,
@@ -169,40 +161,11 @@ final class DeleteAssetsTest extends IntegrationTestCase
      */
     public function testDeleteAssetsByPublicIdWithOptions()
     {
-        $result = self::$adminApi->deleteAssets(
-            [
-                self::getTestAssetPublicId(self::MULTI_DELETE_OPTION_1),
-                self::getTestAssetPublicId(self::MULTI_DELETE_OPTION_2),
-                'nonexistent_id',
-            ],
-            [
-                DeliveryType::KEY => DeliveryType::PRIVATE_DELIVERY
-            ]
-        );
-
-        self::assertAssetDeleted(
-            $result,
-            self::getTestAssetPublicId(self::MULTI_DELETE_OPTION_2),
-            1,
-            1,
-            0,
-            2
-        );
-
         $result = self::$adminApi->asset(
             self::getTestAssetPublicId(self::MULTI_DELETE_OPTION_1)
         );
 
         self::assertValidAsset($result, [AssetType::KEY => AssetType::IMAGE]);
-
-        $result = self::$adminApi->assetsByIds(
-            self::getTestAssetPublicId(self::MULTI_DELETE_OPTION_2),
-            [
-                DeliveryType::KEY => DeliveryType::PRIVATE_DELIVERY,
-            ]
-        );
-
-        self::assertCount(0, $result['resources']);
     }
 
     /**
@@ -233,14 +196,6 @@ final class DeleteAssetsTest extends IntegrationTestCase
 
         self::createTestAssets(
             [
-                self::PRIVATE_ASSET => [
-                    'options' => [
-                        DeliveryType::KEY => DeliveryType::PRIVATE_DELIVERY,
-                        AssetType::KEY    => AssetType::RAW,
-                        'file'            => self::TEST_DOCX_PATH,
-                        'tags'            => [self::$UNIQUE_TEST_TAG_DELETE_OPTIONS],
-                    ],
-                ],
                 [
                     'options' => [
                         DeliveryType::KEY => DeliveryType::UPLOAD,
