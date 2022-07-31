@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary;
+namespace Cloudinary\MediaManagement;
 
-use Cloudinary\Api\Exception\GeneralError;
+use Cloudinary\MediaManagement\Api\Exception\GeneralError;
 use GuzzleHttp\Psr7;
 use Psr\Http\Message\StreamInterface;
 use Psr\Http\Message\UriInterface;

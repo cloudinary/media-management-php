@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test;
+namespace Cloudinary\MediaManagement\Test;
 
-use Cloudinary\Cloudinary;
+use Cloudinary\MediaManagement\Cloudinary;
 use Cloudinary\StringUtils;
 use Exception;
 use Monolog\Handler\TestHandler;

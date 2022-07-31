@@ -38,7 +38,7 @@ composer require "cloudinary/media-management"
 
 ### Setup
 ```php
-use Cloudinary\Cloudinary;
+use Cloudinary\MediaManagement\Cloudinary;
 
 $cloudinary = new Cloudinary();
 ```

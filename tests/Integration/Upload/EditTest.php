@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Upload;
+namespace Cloudinary\MediaManagement\Test\Integration\Upload;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\BadRequest;
-use Cloudinary\Api\Exception\NotFound;
-use Cloudinary\Api\Metadata\StringMetadataField;
-use Cloudinary\Asset\AssetTransformation;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Test\Helpers\MockUploadApi;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\BadRequest;
+use Cloudinary\MediaManagement\Api\Exception\NotFound;
+use Cloudinary\MediaManagement\Api\Metadata\StringMetadataField;
+use Cloudinary\MediaManagement\Asset\AssetTransformation;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Test\Helpers\MockUploadApi;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 use Cloudinary\Transformation\Gravity;
 use Cloudinary\Transformation\Resize;
 

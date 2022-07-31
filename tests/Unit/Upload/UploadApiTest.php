@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Upload;
+namespace Cloudinary\MediaManagement\Test\Unit\Upload;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Configuration\ApiConfig;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Test\Helpers\MockUploadApi;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Configuration\ApiConfig;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Test\Helpers\MockUploadApi;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 
 /**
  * Class UploadApiTest

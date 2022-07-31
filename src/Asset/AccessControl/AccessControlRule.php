@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Asset\AccessControl;
+namespace Cloudinary\MediaManagementAsset\AccessControl;
 
 use Cloudinary\ArrayUtils;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Utils;
 use DateTime;
 use JsonSerializable;
 

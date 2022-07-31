@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Configuration;
+namespace Cloudinary\MediaManagement\Configuration;
 
-use Cloudinary\Exception\ConfigurationException;
+use Cloudinary\MediaManagement\Exception\ConfigurationException;
 use Cloudinary\JsonUtils;
 use Cloudinary\StringUtils;
 use Psr\Http\Message\UriInterface;

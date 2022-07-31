@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Admin;
+namespace Cloudinary\MediaManagement\Test\Integration\Admin;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Asset\DeliveryType;
-use Cloudinary\Asset\ModerationStatus;
-use Cloudinary\Asset\ModerationType;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Asset\DeliveryType;
+use Cloudinary\MediaManagement\Asset\ModerationStatus;
+use Cloudinary\MediaManagement\Asset\ModerationType;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 
 /**
  * Class AssetTest

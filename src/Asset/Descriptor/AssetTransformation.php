@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Asset;
+namespace Cloudinary\MediaManagement\Asset;
 
 use BadMethodCallException;
 use Cloudinary\ArrayUtils;

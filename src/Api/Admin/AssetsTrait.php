@@ -8,16 +8,16 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Admin;
+namespace Cloudinary\MediaManagement\Api\Admin;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\ApiUtils;
-use Cloudinary\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\ApiUtils;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Asset\DeliveryType;
-use Cloudinary\Asset\ModerationStatus;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Asset\DeliveryType;
+use Cloudinary\MediaManagement\Asset\ModerationStatus;
 
 /**
  * Enables you to manage the assets in your cloud.

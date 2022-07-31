@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Helpers;
+namespace Cloudinary\MediaManagement\Test\Helpers;
 
-use Cloudinary\Api\Search\SearchApi;
+use Cloudinary\MediaManagement\Api\Search\SearchApi;
 
 /**
  * Class MockSearchApi

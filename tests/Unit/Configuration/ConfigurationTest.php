@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Configuration;
+namespace Cloudinary\MediaManagement\Test\Unit\Configuration;
 
-use Cloudinary\Configuration\ApiConfig;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Test\Unit\UnitTestCase;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Configuration\ApiConfig;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Utils;
 
 /**
  * Class ConfigTest

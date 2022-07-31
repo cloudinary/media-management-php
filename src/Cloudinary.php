@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary;
+namespace Cloudinary\MediaManagement;
 
-use Cloudinary\Api\Admin\AdminApi;
-use Cloudinary\Api\Search\SearchApi;
-use Cloudinary\Api\Upload\UploadApi;
-use Cloudinary\Configuration\Configuration;
+use Cloudinary\MediaManagement\Api\Admin\AdminApi;
+use Cloudinary\MediaManagement\Api\Search\SearchApi;
+use Cloudinary\MediaManagement\Api\Upload\UploadApi;
+use Cloudinary\MediaManagement\Configuration\Configuration;
 
 /**
  * Defines the Cloudinary instance.

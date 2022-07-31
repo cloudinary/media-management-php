@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Admin;
+namespace Cloudinary\MediaManagement\Test\Integration\Admin;
 
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 
 /**
  * Class PingTest

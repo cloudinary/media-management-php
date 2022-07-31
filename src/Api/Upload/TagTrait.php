@@ -8,10 +8,10 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Upload;
+namespace Cloudinary\MediaManagement\Api\Upload;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiResponse;
 use Cloudinary\ArrayUtils;
 use GuzzleHttp\Promise\PromiseInterface;
 

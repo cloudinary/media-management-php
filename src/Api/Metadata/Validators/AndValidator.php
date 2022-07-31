@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Metadata\Validators;
+namespace Cloudinary\MediaManagement\Api\Metadata\Validators;
 
 /**
  * An 'And' rule validation used to combine other rules with an 'AND' logic relation between them.

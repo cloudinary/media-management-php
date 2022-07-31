@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Metadata;
+namespace Cloudinary\MediaManagement\Api\Metadata;
 
 /**
  * Represents a structured metadata field with 'Int' type.

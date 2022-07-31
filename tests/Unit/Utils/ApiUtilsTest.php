@@ -8,14 +8,14 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Utils;
+namespace Cloudinary\MediaManagement\Test\Unit\Utils;
 
-use Cloudinary\Api\ApiUtils;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Api\ApiUtils;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 use Cloudinary\Transformation\Format;
 use Cloudinary\Transformation\Transformation;
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Utils;
 
 /**
  * Class ApiUtilsTest

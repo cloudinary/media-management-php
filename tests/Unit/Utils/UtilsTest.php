@@ -8,9 +8,9 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Utils;
+namespace Cloudinary\MediaManagement\Test\Unit\Utils;
 
-use Cloudinary\Utils;
+use Cloudinary\MediaManagement\Utils;
 use PHPUnit\Framework\TestCase;
 
 /**

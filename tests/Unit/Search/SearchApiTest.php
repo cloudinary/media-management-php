@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Search;
+namespace Cloudinary\MediaManagement\Test\Unit\Search;
 
-use Cloudinary\Api\Exception\GeneralError;
-use Cloudinary\Test\Helpers\MockSearchApi;
-use Cloudinary\Test\Helpers\RequestAssertionsTrait;
-use Cloudinary\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Api\Exception\GeneralError;
+use Cloudinary\MediaManagement\Test\Helpers\MockSearchApi;
+use Cloudinary\MediaManagement\Test\Helpers\RequestAssertionsTrait;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 
 /**
  * Class SearchApiTest

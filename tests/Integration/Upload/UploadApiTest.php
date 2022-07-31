@@ -8,17 +8,17 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Upload;
+namespace Cloudinary\MediaManagement\Test\Integration\Upload;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Api\Exception\GeneralError;
-use Cloudinary\Api\Metadata\SetMetadataField;
-use Cloudinary\Api\Metadata\StringMetadataField;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\Exception\GeneralError;
+use Cloudinary\MediaManagement\Api\Metadata\SetMetadataField;
+use Cloudinary\MediaManagement\Api\Metadata\StringMetadataField;
 use Cloudinary\ArrayUtils;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Asset\DeliveryType;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Asset\DeliveryType;
 use Cloudinary\FileUtils;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 use Cloudinary\Transformation\Format;
 use Cloudinary\Transformation\Resize;
 use GuzzleHttp\Psr7\Uri;

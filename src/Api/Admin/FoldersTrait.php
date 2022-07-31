@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Admin;
+namespace Cloudinary\MediaManagement\Api\Admin;
 
-use Cloudinary\Api\ApiClient;
-use Cloudinary\Api\ApiResponse;
-use Cloudinary\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Api\ApiClient;
+use Cloudinary\MediaManagement\Api\ApiResponse;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
 use Cloudinary\ArrayUtils;
 
 /**

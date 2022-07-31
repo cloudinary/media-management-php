@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Api\Upload;
+namespace Cloudinary\MediaManagement\Api\Upload;
 
 /**
  * Class UploadEndPoint

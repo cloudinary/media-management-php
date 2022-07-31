@@ -8,12 +8,12 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Unit\Utils;
+namespace Cloudinary\MediaManagement\Test\Unit\Utils;
 
-use Cloudinary\Configuration\Configuration;
-use Cloudinary\Test\Unit\UnitTestCase;
-use Cloudinary\Utils;
-use Cloudinary\Utils\SignatureVerifier;
+use Cloudinary\MediaManagement\Configuration\Configuration;
+use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
+use Cloudinary\MediaManagement\Utils;
+use Cloudinary\MediaManagement\Utils\SignatureVerifier;
 use InvalidArgumentException;
 
 /**
@@ -265,9 +265,9 @@ class SignatureVerifierTest extends UnitTestCase
     }
 }
 
-namespace Cloudinary;
+namespace Cloudinary\MediaManagement;
 
-use Cloudinary\Test\Unit\Utils\SignatureVerifierTest;
+use Cloudinary\MediaManagement\Test\Unit\Utils\SignatureVerifierTest;
 
 /**
  * Mock for time() function

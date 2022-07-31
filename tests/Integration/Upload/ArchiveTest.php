@@ -8,11 +8,11 @@
  * file that was distributed with this source code.
  */
 
-namespace Cloudinary\Test\Integration\Upload;
+namespace Cloudinary\MediaManagement\Test\Integration\Upload;
 
-use Cloudinary\Api\Exception\ApiError;
-use Cloudinary\Asset\AssetType;
-use Cloudinary\Test\Integration\IntegrationTestCase;
+use Cloudinary\MediaManagement\Api\Exception\ApiError;
+use Cloudinary\MediaManagement\Asset\AssetType;
+use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
 use ZipArchive;
 
 /**
