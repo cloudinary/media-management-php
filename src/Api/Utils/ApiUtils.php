@@ -218,34 +218,6 @@ class ApiUtils
     }
 
     /**
-     * Serializes responsive breakpoints.
-     *
-     * @param array $breakpoints
-     *
-     * @return false|string|null
-     *
-     * @internal
-     */
-    public static function serializeResponsiveBreakpoints($breakpoints)
-    {
-        if (! $breakpoints) {
-            return null;
-        }
-        $breakpointsParams = [];
-        foreach (ArrayUtils::build($breakpoints) as $breakpointSettings) {
-            if ($breakpointSettings) {
-                $transformation = ArrayUtils::get($breakpointSettings, 'transformation');
-                if ($transformation) {
-                    $breakpointSettings['transformation'] = self::serializeAssetTransformations($transformation);
-                }
-                $breakpointsParams[] = $breakpointSettings;
-            }
-        }
-
-        return json_encode($breakpointsParams);
-    }
-
-    /**
      * @param array $parameters
      *
      * @return string

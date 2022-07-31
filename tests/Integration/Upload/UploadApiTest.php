@@ -10,21 +10,19 @@
 
 namespace Cloudinary\MediaManagement\Test\Integration\Upload;
 
+use Cloudinary\ArrayUtils;
 use Cloudinary\MediaManagement\Api\Exception\ApiError;
 use Cloudinary\MediaManagement\Api\Exception\GeneralError;
 use Cloudinary\MediaManagement\Api\Metadata\SetMetadataField;
 use Cloudinary\MediaManagement\Api\Metadata\StringMetadataField;
-use Cloudinary\ArrayUtils;
 use Cloudinary\MediaManagement\Asset\AssetType;
 use Cloudinary\MediaManagement\Asset\DeliveryType;
-use Cloudinary\FileUtils;
+use Cloudinary\MediaManagement\FileUtils;
 use Cloudinary\MediaManagement\Test\Integration\IntegrationTestCase;
-use Cloudinary\Transformation\Format;
 use Cloudinary\Transformation\Resize;
-use GuzzleHttp\Psr7\Uri;
-use PHPUnit\Framework\Constraint\IsType;
-use Psr\Http\Message\StreamInterface;
 use GuzzleHttp\Psr7;
+use GuzzleHttp\Psr7\Uri;
+use Psr\Http\Message\StreamInterface;
 
 /**
  * Class UploadApiTest
@@ -57,9 +55,6 @@ final class UploadApiTest extends IntegrationTestCase
     private static $DATASOURCE_ENTRY_EXTERNAL_ID2;
 
     private static $METADATA_FIELDS;
-
-    private static $INCOMING_TRANSFORMATION_ARR;
-    private static $INCOMING_TRANSFORMATION_OBJ;
 
     public static function setUpBeforeClass(): void
     {
@@ -104,9 +99,6 @@ final class UploadApiTest extends IntegrationTestCase
         $setMetadataField = new SetMetadataField(self::$METADATA_FIELD_EXTERNAL_ID_SET, self::$DATASOURCE_MULTIPLE);
         $setMetadataField->setExternalId(self::$METADATA_FIELD_EXTERNAL_ID_SET);
         self::$adminApi->addMetadataField($setMetadataField);
-
-        self::$INCOMING_TRANSFORMATION_ARR = ['crop' => 'scale', 'width' => self::INCOMING_TRANSFORMATION_WIDTH];
-        self::$INCOMING_TRANSFORMATION_OBJ = Resize::scale(self::INCOMING_TRANSFORMATION_WIDTH);
     }
 
     public static function tearDownAfterClass(): void
@@ -291,45 +283,6 @@ final class UploadApiTest extends IntegrationTestCase
     }
 
     /**
-     * @throws ApiError
-     */
-    public function testUploadIncomingTransformation()
-    {
-        $result = self::uploadTestAssetImage(self::$INCOMING_TRANSFORMATION_ARR);
-
-        self::assertValidAsset(
-            $result,
-            [
-                'width' => self::INCOMING_TRANSFORMATION_WIDTH,
-            ]
-        );
-
-        $result = self::uploadTestAssetImage(['transformation' => self::$INCOMING_TRANSFORMATION_OBJ]);
-
-        self::assertValidAsset(
-            $result,
-            [
-                'width' => self::INCOMING_TRANSFORMATION_WIDTH,
-            ]
-        );
-    }
-    /**
-     * @throws ApiError
-     */
-    public function testUploadIncomingTransformationWithFormat()
-    {
-        $result = self::uploadTestAssetImage(array_merge(self::$INCOMING_TRANSFORMATION_ARR, ['format'=> 'gif']));
-
-        self::assertValidAsset(
-            $result,
-            [
-                'width' => self::INCOMING_TRANSFORMATION_WIDTH,
-                'format' => 'gif'
-            ]
-        );
-    }
-
-    /**
      * Add a metadata field to the image with the Public ID
      *
      * @see https://cloudinary.com/documentation/image_upload_api_reference#metadata_method
@@ -480,7 +433,7 @@ final class UploadApiTest extends IntegrationTestCase
             'http://cloudinary.com/images/old_logo.png',
             [
                 'filename_override' => 'overridden',
-                'tags' => self::$ASSET_TAGS
+                'tags'              => self::$ASSET_TAGS,
             ]
         );
 

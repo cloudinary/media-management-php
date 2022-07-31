@@ -21,7 +21,6 @@ final class RestoreAssetsTest extends IntegrationTestCase
 {
     const RESTORE_ASSET  = 'restore_asset';
     const BACKUP_ASSET_1 = 'backup_asset_1';
-    const BACKUP_ASSET_2 = 'backup_asset_2';
 
     private static $UNIQUE_TEST_TAG_RESTORE;
 
@@ -46,13 +45,7 @@ final class RestoreAssetsTest extends IntegrationTestCase
                     'options' => [
                         'backup' => true,
                     ],
-                ],
-                self::BACKUP_ASSET_2 => [
-                    'options' => [
-                        'backup' => true,
-                        'transformation' => ['angle' => 0],
-                    ],
-                ],
+                ]
             ]
         );
     }
@@ -110,31 +103,23 @@ final class RestoreAssetsTest extends IntegrationTestCase
         $deleteResult = self::$adminApi->deleteAssets(
             [
                 self::getTestAssetPublicId(self::BACKUP_ASSET_1),
-                self::getTestAssetPublicId(self::BACKUP_ASSET_2),
             ]
         );
 
-        self::assertAssetDeleted($deleteResult, self::getTestAssetPublicId(self::BACKUP_ASSET_1), 2);
-        self::assertAssetDeleted($deleteResult, self::getTestAssetPublicId(self::BACKUP_ASSET_2), 2);
+        self::assertAssetDeleted($deleteResult, self::getTestAssetPublicId(self::BACKUP_ASSET_1), 1);
 
         $secondAsset = self::$adminApi->asset(
             self::getTestAssetPublicId(self::BACKUP_ASSET_1),
-            ['versions' => true]
-        );
-        $thirdAsset = self::$adminApi->asset(
-            self::getTestAssetPublicId(self::BACKUP_ASSET_2),
             ['versions' => true]
         );
 
         $restoreResult = self::$adminApi->restore(
             [
                 self::getTestAssetPublicId(self::BACKUP_ASSET_1),
-                self::getTestAssetPublicId(self::BACKUP_ASSET_2),
             ],
             [
                 'versions' => [
                     $secondAsset['versions'][0]['version_id'],
-                    $thirdAsset['versions'][0]['version_id'],
                 ],
             ]
         );
@@ -142,10 +127,6 @@ final class RestoreAssetsTest extends IntegrationTestCase
         self::assertEquals(
             $restoreResult[self::getTestAssetPublicId(self::BACKUP_ASSET_1)]['bytes'],
             self::getTestAsset(self::BACKUP_ASSET_1)['bytes']
-        );
-        self::assertEquals(
-            $restoreResult[self::getTestAssetPublicId(self::BACKUP_ASSET_2)]['bytes'],
-            self::getTestAsset(self::BACKUP_ASSET_2)['bytes']
         );
     }
 

@@ -436,7 +436,6 @@ abstract class IntegrationTestCase extends CloudinaryTestCase
         self::assertObjectStructure(
             $asset,
             [
-                'transformation' => IsType::TYPE_STRING,
                 'width'          => IsType::TYPE_INT,
                 'height'         => IsType::TYPE_INT,
                 'bytes'          => IsType::TYPE_INT,
@@ -466,7 +465,6 @@ abstract class IntegrationTestCase extends CloudinaryTestCase
         self::assertObjectStructure(
             $asset,
             [
-                'transformation' => IsType::TYPE_STRING,
                 'id'             => IsType::TYPE_STRING,
                 'bytes'          => IsType::TYPE_INT,
                 'format'         => IsType::TYPE_STRING,
