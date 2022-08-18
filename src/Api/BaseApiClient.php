@@ -84,13 +84,13 @@ class BaseApiClient
      *
      * Initialized on the first call to {@see self::userAgent()}
      *
-     * Sample value: CloudinaryPHP/2.3.4 (PHP 5.6.7)
+     * Sample value: CloudinaryMMPHP/2.3.4 (PHP 5.6.7)
      *
      * @internal
      *
      * Do not change this value
      */
-    private static $userAgent = 'CloudinaryPHP/' . Cloudinary::VERSION . ' (PHP ' . PHP_VERSION . ')';
+    private static $userAgent = 'CloudinaryMMPHP/' . Cloudinary::VERSION . ' (PHP ' . PHP_VERSION . ')';
 
     /**
      * Additional information to be passed with the USER_AGENT, e.g. 'CloudinaryMagento/1.0.1'.
