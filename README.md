@@ -1,4 +1,7 @@
-[![Build Status](https://app.travis-ci.com/cloudinary/media-management-php.svg)](https://app.travis-ci.com/cloudinary/media-management-php) [![license](https://img.shields.io/github/license/cloudinary/media-management-php.svg?maxAge=2592000)](https://github.com/cloudinary/media-management-php/blob/master/LICENSE) [![Packagist](https://img.shields.io/packagist/v/cloudinary/media-management.svg?maxAge=2592000)](https://packagist.org/packages/cloudinary/media-management) [![Packagist](https://img.shields.io/packagist/dt/cloudinary/media-management.svg?maxAge=2592000)](https://packagist.org/packages/cloudinary/media-management/stats)
+[![Build Status](https://github.com/cloudinary/media-management-php/actions/workflows/test.yaml/badge.svg)](https://github.com/cloudinary/media-management-php/actions/workflows/test.yaml)
+[![license](https://img.shields.io/github/license/cloudinary/media-management-php.svg?maxAge=2592000)](https://github.com/cloudinary/media-management-php/blob/master/LICENSE)
+[![Packagist](https://img.shields.io/packagist/v/cloudinary/media-management.svg?maxAge=2592000)](https://packagist.org/packages/cloudinary/media-management)
+[![Packagist](https://img.shields.io/packagist/dt/cloudinary/media-management.svg?maxAge=2592000)](https://packagist.org/packages/cloudinary/media-management/stats)
 
 Cloudinary Media Management PHP SDK
 ==================
@@ -9,6 +12,7 @@ Effortlessly upload and manage your cloud's assets.
 
 #### Note
 This Readme provides basic installation and usage information.
+For the complete documentation, see the [Media Management SDK Guide](https://cloudinary.com/documentation/media_management_api).
 
 ## Table of Contents
 - [Key Features](#key-features)
@@ -16,11 +20,11 @@ This Readme provides basic installation and usage information.
 - [Installation](#installation)
 - [Usage](#usage)
     - [Setup](#Setup)
-    - [Transform and Optimize Assets](#Transform-and-Optimize-Assets)
+    - [Upload](#Upload)
 
 
 ## Key Features
-- [Asset Management](https://cloudinary.com/documentation/php_asset_administration).
+- [Asset Management](https://cloudinary.com/documentation/media_management_asset_management).
 
 
 ## Version Support
@@ -44,8 +48,8 @@ $cloudinary = new Cloudinary();
 ```
 
 ### Upload
-- [See full documentation](https://cloudinary.com/documentation/php_image_and_video_upload).
-- [Learn more about configuring your uploads with upload presets](https://cloudinary.com/documentation/upload_presets).
+- [See full documentation](https://cloudinary.com/documentation/media_management_upload_api_reference).
+
 ```php
 $cloudinary->uploadApi->upload('my_image.jpg');
 ```
