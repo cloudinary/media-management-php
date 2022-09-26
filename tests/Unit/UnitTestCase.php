@@ -59,7 +59,7 @@ abstract class UnitTestCase extends CloudinaryTestCase
 
     protected static function clearEnvironment()
     {
-        putenv(Configuration::CLOUDINARY_URL_ENV_VAR); // unset CLOUDINARY_URL
+        putenv(Configuration::CLOUDINARY_URL_ENV_VAR); // unset CLD_MEDIA_MANAGEMENT
 
         Configuration::instance()->init();
     }

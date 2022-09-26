@@ -106,7 +106,7 @@ use Psr\Log\LoggerInterface;
  *       ]
  *   );
  *
- * Logging can also be configured using the CLOUDINARY_URL ENV variable by passing additional params to URL.
+ * Logging can also be configured using the CLD_MEDIA_MANAGEMENT ENV variable by passing additional params to URL.
  * For example, the following URL (long string split into multiple lines for readability):
  *
  * CLOUDINARY_URL=cloudinary://123456789012345:abcdeghijklmnopqrstuvwxyz12@n07t21i7
