@@ -19,7 +19,7 @@ use Cloudinary\MediaManagement\Api\Exception\NotAllowed;
 use Cloudinary\MediaManagement\Api\Exception\NotFound;
 use Cloudinary\MediaManagement\Api\Exception\RateLimited;
 use Cloudinary\ArrayUtils;
-use Cloudinary\MediaManagement\Cloudinary;
+use Cloudinary\MediaManagement\CldMediaManagement;
 use Cloudinary\MediaManagement\Configuration\ApiConfig;
 use Cloudinary\JsonUtils;
 use Cloudinary\MediaManagement\Log\LoggerTrait;
@@ -90,7 +90,7 @@ class BaseApiClient
      *
      * Do not change this value
      */
-    private static $userAgent = 'CloudinaryMMPHP/' . Cloudinary::VERSION . ' (PHP ' . PHP_VERSION . ')';
+    private static $userAgent = 'CloudinaryMMPHP/' . CldMediaManagement::VERSION . ' (PHP ' . PHP_VERSION . ')';
 
     /**
      * Additional information to be passed with the USER_AGENT, e.g. 'CloudinaryMagento/1.0.1'.

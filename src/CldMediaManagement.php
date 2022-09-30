@@ -16,11 +16,11 @@ use Cloudinary\MediaManagement\Api\Upload\UploadApi;
 use Cloudinary\MediaManagement\Configuration\Configuration;
 
 /**
- * Defines the Cloudinary instance.
+ * Defines the CldMediaManagement instance.
  *
  * @api
  */
-class Cloudinary
+class CldMediaManagement
 {
     /**
      * The current version of the SDK.

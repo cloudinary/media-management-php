@@ -2,7 +2,7 @@
 
 namespace Cloudinary\MediaManagement\Test;
 
-$cloudinary = new \Cloudinary\Cloudinary();
+$cldMediaManagement = new \Cloudinary\MediaManagement\CldMediaManagement();
 
-      $cloudinary->uploadApi()->upload("tests/assets/sample.png",
+      $cldMediaManagement->uploadApi()->upload("tests/assets/sample.png",
           [ "quality_analysis" => TRUE, "tags" => ['animal', 'dog'], "eager" => Delivery::format(Format::auto())]);

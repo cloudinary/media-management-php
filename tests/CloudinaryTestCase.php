@@ -10,7 +10,7 @@
 
 namespace Cloudinary\MediaManagement\Test;
 
-use Cloudinary\MediaManagement\Cloudinary;
+use Cloudinary\MediaManagement\CldMediaManagement;
 use Cloudinary\StringUtils;
 use Exception;
 use Monolog\Handler\TestHandler;
@@ -80,7 +80,7 @@ abstract class CloudinaryTestCase extends TestCase
         parent::setUpBeforeClass();
 
         self::$SUFFIX          = getenv('TRAVIS_JOB_ID') ?: mt_rand(11111, 99999);
-        self::$TEST_TAG        = 'cloudinary_mm_php_v' . str_replace(['.', '-'], '_', Cloudinary::VERSION);
+        self::$TEST_TAG        = 'cloudinary_mm_php_v' . str_replace(['.', '-'], '_', CldMediaManagement::VERSION);
         self::$UNIQUE_TEST_TAG = self::$TEST_TAG . '_' . self::$SUFFIX;
         self::$UNIQUE_TEST_ID  = self::$UNIQUE_TEST_TAG;
         self::$UNIQUE_TEST_ID2 = self::$UNIQUE_TEST_ID . '_2';
