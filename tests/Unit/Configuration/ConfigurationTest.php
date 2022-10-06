@@ -33,7 +33,7 @@ class ConfigurationTest extends UnitTestCase
     }
 
     /**
-     * Should allow passing Cloudinary URL that starts with a 'CLOUDINARY_URL=' prefix, which is technically illegal,
+     * Should allow passing Cloudinary URL that starts with a 'CLD_MEDIA_MANAGEMENT=' prefix, which is technically illegal,
      * but we are permissive.
      */
     public function testConfigFromFullUrl()

@@ -24,6 +24,6 @@ jobs:
         run: composer update -n
       - name: Run Tests
         run: |
-          export CLOUDINARY_URL=$(bash tools/get_test_cloud.sh);
+          export CLD_MEDIA_MANAGEMENT=$(bash tools/get_test_cloud.sh);
           echo cloud_name: "$(echo $CLOUDINARY_URL | cut -d'@' -f2)"
           vendor/phpunit/phpunit/phpunit
