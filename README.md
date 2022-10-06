@@ -41,17 +41,18 @@ composer require "cloudinary/media-management"
 # Usage
 
 ### Setup
-```php
-use Cloudinary\MediaManagement\Cloudinary;
 
-$cloudinary = new Cloudinary();
+```php
+use Cloudinary\MediaManagement\CldMediaManagement;
+
+$cldMediaManagement = new CldMediaManagement();
 ```
 
 ### Upload
 - [See full documentation](https://cloudinary.com/documentation/media_management_upload_api_reference).
 
 ```php
-$cloudinary->uploadApi->upload('my_image.jpg');
+$cldMediaManagement->uploadApi->upload('my_image.jpg');
 ```
 
 ## Contributions

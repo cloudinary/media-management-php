@@ -10,7 +10,7 @@
 
 namespace Cloudinary\MediaManagement\Test\Unit\Cloudinary;
 
-use Cloudinary\MediaManagement\Cloudinary;
+use Cloudinary\MediaManagement\CldMediaManagement;
 use Cloudinary\MediaManagement\Configuration\Configuration;
 use Cloudinary\MediaManagement\Test\Unit\UnitTestCase;
 use InvalidArgumentException;
@@ -22,7 +22,7 @@ class CloudinaryTest extends UnitTestCase
 {
     public function testCloudinaryUrlFromEnv()
     {
-        $c = new Cloudinary();
+        $c = new CldMediaManagement();
 
         self::assertNotNull($c->configuration->cloud->cloudName);
         self::assertNotNull($c->configuration->cloud->apiKey);
@@ -35,12 +35,12 @@ class CloudinaryTest extends UnitTestCase
 
         $this->expectException(InvalidArgumentException::class);
 
-        new Cloudinary(); // Boom!
+        new CldMediaManagement(); // Boom!
     }
 
     public function testCloudinaryFromOptions()
     {
-        $c = new Cloudinary(
+        $c = new CldMediaManagement(
             [
                 'cloud' => [
                     'cloud_name' => self::CLOUD_NAME,
@@ -57,7 +57,7 @@ class CloudinaryTest extends UnitTestCase
 
     public function testCloudinaryFromUrl()
     {
-        $c = new Cloudinary($this->cloudinaryUrl);
+        $c = new CldMediaManagement($this->cloudinaryUrl);
 
         self::assertEquals(self::CLOUD_NAME, $c->configuration->cloud->cloudName);
         self::assertEquals(self::API_KEY, $c->configuration->cloud->apiKey);
@@ -70,7 +70,7 @@ class CloudinaryTest extends UnitTestCase
 
         $config = new Configuration($this->cloudinaryUrl);
 
-        $c = new Cloudinary($config);
+        $c = new CldMediaManagement($config);
 
         self::assertEquals(self::CLOUD_NAME, $c->configuration->cloud->cloudName);
         self::assertEquals(self::API_KEY, $c->configuration->cloud->apiKey);
